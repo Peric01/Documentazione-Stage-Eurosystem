@@ -1,0 +1,10 @@
+#Riferimenti per logger
+
+https://realpython.com/python-logging/
+https://docs.python.org/3/library/logging.html
+https://blog.besharp.it/wp-content/uploads/2021/01/Parte_I__Best_practice_per_il_logging_su_Python_e_come_integrarsi_con_la_dashboard_di_Kibana_tramite_AWS_Kinesis_Data_Firehose_ed_Amazon_Elasticsearch_Service-Proud2beCloud.pdf
+https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels?__cf_chl_tk=VO2GICujObXjZn_76xh23cXYHnILYhNB85apxOVDDyY-1750321200-1.0.1.1-2ZqNXl9rtM4rUXg7uJhaeeTuyqUFLx48cHv1ijp4B5M
+
+#Riferimenti per codici di vulnerabilita
+
+https://www.cve.org/

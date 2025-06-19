@@ -1,0 +1,51 @@
+Strumenti Software: Comunicazione
+Teams
+Outlook
+
+Strumenti Software: Codifica
+VSCode
+Python 3.12.10
+Hetzner?
+Telegraph
+InfluxDB
+Grafana
+
+
+Parte Logger:
+BEST PRACTICE = BP
+
+BP: 1 singolo handler per ogni logger, seguendo lo stile di eredita
+Altri appunti su come funzionano i logger nel file python di studio dei logger
+
+Scelta architetturale del sistema LAYERED: è la piu comune nei sistemi ETL (Extract-Transform-Load)
+Separazione netta: parsing (layer 1), raccolta (layer 2), dispatch (layer 3), persistenza (layer 4 – MQTT)
+
+Scelta architetturale del logger Pipeline: 	I log vengono trasformati e passati sequenzialmente da un modulo all'altro
+
+Pattern strutturali
+Adapter nei parser (CowrieParser, AuditdParser, NetcatParser): Uniformano diversi formati di log (raw string, JSON, ecc.) a una struttura comune (dict)
+Composite per i parser: Consente di trattare più parser come un’unica entità
+Adapter perché i formati di log variano, ma il sistema vuole lavorare su un’unica struttura. Composite ti semplifica la gestione modulare di tanti parser.
+
+
+Pattern comportamentali
+Strategy per ILogParser e IDataDispatcher: 	Consente di cambiare dinamicamente il parser o il dispatcher senza modificare il LogCollector
+Strategy per mantenere il codice aperto all'estensione, chiuso alla modifica (principio SOLID)
+
+Observer implicito con MQTT: Si basa su sottoscrizione/pubblicazione tra componenti (Grafana/Telegraph sono “osservatori” dei topic)
+
+Pattern creazionali
+Singleton per LogManager: Assicura che tutto il sistema usi un’unica istanza del logger configurato correttamente
+Factory Method in LogManager.get_instance(): Incaricato di costruire e restituire l’oggetto Logger
+Singleton + Factory è la combinazione classica per la gestione del logging centralizzato.
+
+
+Parte Honeypot:
+
+Le regole delle porte vanno dall'alto verso il basso.
+Creato l'account su Hetzner per vedere le macchine su cui lavorare e i firewall delle macchine su cui mettere mano
+Hetzner -> Hetzner Cloud -> Progetto Honeypot -> Firewalls
+Lavorando da remoto è stato necessario aggiungere il mio IP di casa agli IP permessi su Hetzner per accedere alle macchine
+
+Comando per collegarsi alla macchina 
+ssh UTENTE@IP_DELLA_MACCHINA -p PORTA
