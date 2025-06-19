@@ -157,7 +157,7 @@
         <mxCell id="SJIwrBueYrAvOL3O_ICt-45" value="80,443" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1010" y="378" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XffRLlX8YXGy_mDetvde-1" value="scan" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="XffRLlX8YXGy_mDetvde-1" value="scan" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1085" y="508" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
@@ -412,12 +412,6 @@
             <mxPoint x="1090" y="830" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EWb6-vIa2LJka5ViZmFn-74" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="1" source="EWb6-vIa2LJka5ViZmFn-1" target="EWb6-vIa2LJka5ViZmFn-5">
-          <mxGeometry x="-1" y="3" relative="1" as="geometry">
-            <mxPoint x="1100" y="750" as="sourcePoint" />
-            <mxPoint x="1260" y="750" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="EWb6-vIa2LJka5ViZmFn-75" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="1" source="EWb6-vIa2LJka5ViZmFn-37" target="EWb6-vIa2LJka5ViZmFn-25">
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
             <mxPoint x="1010" y="920" as="sourcePoint" />
@@ -446,6 +440,12 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1086" y="540" as="sourcePoint" />
             <mxPoint x="910" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWb6-vIa2LJka5ViZmFn-89" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="EWb6-vIa2LJka5ViZmFn-1" target="EWb6-vIa2LJka5ViZmFn-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="890" as="sourcePoint" />
+            <mxPoint x="1140" y="840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
