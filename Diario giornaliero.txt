@@ -1,6 +1,7 @@
 1)
 Conosciuto il reparto HR
 Conosciuto il team Cybersecurity
+Conosciuto altro ragazzo stagista con cui collaborare sul progetto
 Ottenuto il computer aziendale
 Impostato il computer con gli strumenti necessari
 Iniziato lo studio per lo sviluppo del logger
@@ -13,3 +14,4 @@ Diagramma dei casi d'uso non necessario per l'azienda
 3)
 Aggiornato il diagramma delle classi per pattern mancanti
 Effettuata una prima versione del diagramma di flusso del sistema completo, da aggiungere poi i servizi che si vanno ad aprire
+Aggiunto l'account personale della macchina VM honeypot, al gruppo sudoer 
