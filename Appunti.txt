@@ -9,6 +9,7 @@ Hetzner?
 Telegraph
 InfluxDB
 Grafana
+Draw.io
 
 
 Parte Logger:
@@ -18,7 +19,7 @@ BP: 1 singolo handler per ogni logger, seguendo lo stile di eredita
 Altri appunti su come funzionano i logger nel file python di studio dei logger
 
 Scelta architetturale del sistema LAYERED: è la piu comune nei sistemi ETL (Extract-Transform-Load)
-Separazione netta: parsing (layer 1), raccolta (layer 2), dispatch (layer 3), persistenza (layer 4 – MQTT)
+Separazione netta: parsing (layer 1), raccolta (layer 2), publish (layer 3), analisi (layer 4 – MQTT)
 
 Scelta architetturale del logger Pipeline: 	I log vengono trasformati e passati sequenzialmente da un modulo all'altro
 

@@ -8,3 +8,8 @@ https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
 #Riferimenti per codici di vulnerabilita
 
 https://www.cve.org/
+
+#Riferimenti strumenti
+
+https://aws.amazon.com/what-is/mqtt/#:~:text=An%20MQTT%20client%20establishes%20a,to%20subscribers%20who%20are%20interested.
+https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt#what-is-mqtt
