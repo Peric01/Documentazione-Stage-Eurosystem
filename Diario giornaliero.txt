@@ -15,3 +15,5 @@ Diagramma dei casi d'uso non necessario per l'azienda
 Aggiornato il diagramma delle classi per pattern mancanti
 Effettuata una prima versione del diagramma di flusso del sistema completo, da aggiungere poi i servizi che si vanno ad aprire
 Aggiunto l'account personale della macchina VM honeypot, al gruppo sudoer 
+Impostato ambiente di lavoro per lavorare sulla VM tramite VSCode
+Iniziato lo sviluppo del logger in ambiente locale, consiglio dei tutor fare il pull poi sulla VM tramite git
