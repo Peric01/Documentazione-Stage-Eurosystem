@@ -6,3 +6,6 @@ Impostato il computer con gli strumenti necessari
 Iniziato lo studio per lo sviluppo del logger
 
 2)
+Terminata una prima versione del diagramma delle classi per il logger
+Effettuato studio sul diagramma di flusso per il sistema completo
+Diagramma dei casi d'uso non necessario per l'azienda
