@@ -25,7 +25,7 @@ Scelta architetturale del logger Pipeline: 	I log vengono trasformati e passati 
 
 Pattern strutturali
 Adapter nei parser (CowrieParser, AuditdParser, NetcatParser): Uniformano diversi formati di log (raw string, JSON, ecc.) a una struttura comune (dict)
-Composite per i parser: Consente di trattare più parser come un’unica entità
+Factory pattern per i parser: c'è bisogno di un modo per istanziare dinamicamente il parser giusto, in base alla sorgente del log
 Adapter perché i formati di log variano, ma il sistema vuole lavorare su un’unica struttura. Composite ti semplifica la gestione modulare di tanti parser.
 
 

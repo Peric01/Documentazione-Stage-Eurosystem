@@ -9,3 +9,7 @@ Iniziato lo studio per lo sviluppo del logger
 Terminata una prima versione del diagramma delle classi per il logger
 Effettuato studio sul diagramma di flusso per il sistema completo
 Diagramma dei casi d'uso non necessario per l'azienda
+
+3)
+Aggiornato il diagramma delle classi per pattern mancanti
+Effettuata una prima versione del diagramma di flusso del sistema completo, da aggiungere poi i servizi che si vanno ad aprire
