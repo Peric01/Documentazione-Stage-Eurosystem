@@ -17,3 +17,4 @@ Effettuata una prima versione del diagramma di flusso del sistema completo, da a
 Aggiunto l'account personale della macchina VM honeypot, al gruppo sudoer 
 Impostato ambiente di lavoro per lavorare sulla VM tramite VSCode
 Iniziato lo sviluppo del logger in ambiente locale, consiglio dei tutor fare il pull poi sulla VM tramite git
+Fatta una prima versione del custom formatter e del log manager, creato un test per controllare il funzionamento del logManager

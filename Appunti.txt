@@ -50,3 +50,17 @@ Lavorando da remoto è stato necessario aggiungere il mio IP di casa agli IP per
 
 Comando per collegarsi alla macchina 
 ssh UTENTE@IP_DELLA_MACCHINA -p PORTA
+
+Comando per installare i pacchetti necessari di python
+pip install -r requirements.txt
+
+necessita ovviamente di un file requirements nella cartella del progetto sul quale si lavora
+
+Per sviluppare il codice in locale è necessario un ambiente vm di python, creato tramite
+python -m venv venv
+
+e accesso poi tramite
+venv\Scripts\activate (su Windows)
+
+si esce dall'ambiente vm python con
+deactivate
