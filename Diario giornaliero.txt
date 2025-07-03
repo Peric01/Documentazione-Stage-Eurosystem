@@ -18,3 +18,45 @@ Aggiunto l'account personale della macchina VM honeypot, al gruppo sudoer
 Impostato ambiente di lavoro per lavorare sulla VM tramite VSCode
 Iniziato lo sviluppo del logger in ambiente locale, consiglio dei tutor fare il pull poi sulla VM tramite git
 Fatta una prima versione del custom formatter e del log manager, creato un test per controllare il funzionamento del logManager
+
+4)
+Impostato la prima versione che dovrebbe essere funzionante del logger.
+Mancano container_handler e connection_listener da implementare visto che si basano su cio che vogliamo analizzare
+Effettuato studio autonomo sulla pipeline TIG
+
+5)
+Impostata la seconda VM:
+    -seguito l'acquisto del server su hetzner
+    -creato i vari account
+    -installato lo stack tig
+    -installato mqtt
+    -impostato il firewall sulle porte necessarie
+
+6)
+Modificato il docker file della VM con tig per utilizzare correttamente i file conf visto che nel docker-compose.yml mancava
+Cambiato il codice del logger mettendo gli indirizzi effettivi delle macchine e non quelli locali di test
+Aggiunto permesso per collegare in outbound mqtt dal server honeypot
+Effettuata la connessione dai log di cowrie al codice python del parser a telegraf a influx, manca la dashboard grafana per la visualizzazione
+Disabilitato il login diretto sulla root per best practice, essendoci gia altri account sudo dai quali in caso si puo accedere alla root se necessario
+
+7)
+Collegato influxdb e grafana, aggiornato conf influxdb per ricevere anche altri parametri dal logger
+logger cowrie spostato in un utente a se stante per best practice e anche perchè si rompeva tutto
+
+8)
+Terminato il setup di cowrie nel nuovo utente
+Commentata sezione import.sensors in telegraf visto che essendo in un container non ne faremo uso e riempiva il log di errori
+
+9)
+Rimosso nuovamente cowrie e installato tramite container docker
+Installati anche i servizi per apache, openldap e dionaea sempre tramite container docker
+Seguito in parte un pen test con il team di Cybersecurity
+
+10)
+Poiche tutti i servizi ora sono dockerizzati è stato necessario anche cambiare il logger in maniera tale che estragga i log non solo da file json ma anche da docker logs servizio
+Studiato logger di docker e logger regex
+
+11)
+Seguito come viene fatto in genere un VA, vulnerability assessment
+Aggiunto menu di gestione del logger visto che non sempre serve il livello di debugging
+Iniziato la modifica del parser visto che le informazioni dei logs devono essere, ristrutturate in campi e inviate poi con mqtt

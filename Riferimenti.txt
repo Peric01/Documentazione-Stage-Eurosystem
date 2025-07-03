@@ -5,7 +5,16 @@ https://docs.python.org/3/library/logging.html
 https://blog.besharp.it/wp-content/uploads/2021/01/Parte_I__Best_practice_per_il_logging_su_Python_e_come_integrarsi_con_la_dashboard_di_Kibana_tramite_AWS_Kinesis_Data_Firehose_ed_Amazon_Elasticsearch_Service-Proud2beCloud.pdf
 https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels?__cf_chl_tk=VO2GICujObXjZn_76xh23cXYHnILYhNB85apxOVDDyY-1750321200-1.0.1.1-2ZqNXl9rtM4rUXg7uJhaeeTuyqUFLx48cHv1ijp4B5M
 https://codehs.com/tutorial/ryan/add-color-with-ansi-in-javascript
-
+https://www.crowdstrike.com/en-us/cybersecurity-101/next-gen-siem/log-parsing/
+https://docs.cowrie.org/en/latest/OUTPUT.html
+https://stackoverflow.com/questions/3639574/writing-a-parser-for-regular-expressions
+https://swtch.com/~rsc/regexp/regexp1.html
+https://www.ibm.com/docs/en/watson-explorer/11.0.1?topic=parsers-regex
+https://www.reddit.com/r/Compilers/comments/1fiuu4h/help_for_building_a_parser_for_regular_expression/
+https://www.reddit.com/r/selfhosted/comments/xvtzty/tipsutilities_for_reading_and_parsing_docker_logs/
+https://stackoverflow.com/questions/4666973/how-to-extract-the-substring-between-two-markers
+https://docs.cowrie.org/_/downloads/en/stable/pdf/
+https://pypi.org/project/serde/#getting-started
 
 #Riferimenti per codici di vulnerabilita
 
@@ -19,3 +28,16 @@ https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt#what
 
 #Multithreading
 https://www.geeksforgeeks.org/python/multithreading-python-set-1/
+
+VM TIG
+
+https://github.com/alekece/tig-stack
+https://www.strongdm.com/blog/create-users-in-linux-with-useradd-command
+https://documentation.arcserve.com/Arcserve-UDP/available/7.0/ITA/Bookshelf_Files/HTML/UDPLUG/Content/AgentforLinuxUserGuide/udpl_config_sudo_debian.htm
+https://askubuntu.com/questions/401201/could-not-chdir-to-home-directory-home-me-no-such-file-or-directory
+https://www.digitalocean.com/community/tutorials/how-to-disable-root-login-on-ubuntu-20-04
+
+VM honeypot
+
+https://hub.docker.com/r/dinotools/dionaea
+https://dionaea.readthedocs.io/en/latest/installation.html

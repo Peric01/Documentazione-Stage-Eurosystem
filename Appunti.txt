@@ -64,3 +64,65 @@ venv\Scripts\activate (su Windows)
 
 si esce dall'ambiente vm python con
 deactivate
+
+
+Parte logger:
+
+| Campo       | Significato                                                             | Utile per analisi attacchi? | Perché                                                                                        |
+| ----------- | ----------------------------------------------------------------------- | --------------------------- | --------------------------------------------------------------------------------------------- |
+| `timestamp` | Data e ora dell’evento                                                  | ✅ Sì                        | Serve a ricostruire la sequenza temporale degli attacchi.                                     |
+| `src_ip`    | IP di origine dell’attaccante                                           | ✅ Sì                        | Permette di identificare l’origine dell’attacco. Può essere correlato a IP già noti malevoli. |
+| `src_port`  | Porta sorgente dell’attaccante                                          | ⚠️ A volte                  | Utile per capire se l’attaccante usa porte specifiche o casuali.                              |
+| `dst_ip`    | IP del server honeypot (disabilitato nel tuo esempio)                   | ❌ No                        | È sempre il tuo honeypot, poco informativo per l'analisi.                                     |
+| `dst_port`  | Porta a cui è arrivata la connessione                                   | ✅ Sì                        | Ti dice quale servizio è stato attaccato (es. 22 SSH, 23 Telnet).                             |
+| `event`     | Tipo di evento (es. `login.failed`, `command.input`, `session.connect`) | ✅ Sì                        | Cruciale per classificare l’attività dell’attaccante.                                         |
+| `message`   | Messaggio descrittivo dell’evento                                       | ✅ Sì                        | Utile per analisi umana e logging testuale.                                                   |
+| `username`  | Username usato nel tentativo di login                                   | ✅ Sì                        | Serve per vedere attacchi a dizionario o pattern nei nomi.                                    |
+| `password`  | Password usata nel tentativo di login                                   | ✅ Sì                        | Come sopra, utile per blacklist e pattern.                                                    |
+| `command`   | Comando inserito dall’attaccante (se ha avuto accesso alla shell)       | ✅ Sì                        | Fondamentale per vedere cosa l’attaccante vuole fare nel sistema.                             |
+| `session`   | ID univoco della sessione                                               | ✅ Sì                        | Permette di correlare più eventi della stessa connessione.                                    |
+| `protocol`  | Protocollo usato (es. `ssh`, `telnet`)                                  | ✅ Sì                        | Serve per distinguere tipi di attacchi e vettori.                                             |
+| `raw`       | Log originale grezzo                                                    | ⚠️ Utile per debugging      | Può servire per ricostruzioni o debugging, ma non è essenziale in analisi automatica.         |
+
+
+Perché non usare logger nella factory?
+La factory (o qualunque libreria/modulo riutilizzabile) non dovrebbe sapere nulla del logging.
+
+Il suo unico compito è creare oggetti o fallire, lasciando la gestione dell'errore al chiamante.
+
+In questo modo il codice rimane modulare e riutilizzabile anche in contesti dove magari non vuoi loggare nulla.
+
+Servira creare un honeypot per ciascuno
+
+SETUP AMBIENTE VIRTUALE PER STACK TIG E MQTT
+
+Seguito l'acquisto di un server su hetzner con Kevin
+
+Fatto il primo accesso su root con la password ottenuta da hetzner e cambiata la password
+
+Creati gli user sudoer personali e non sudoer admin
+
+impostato le iptables ? non sono piu impostate, da controllare
+
+installato influxdb e influxdb-client
+installato telegraf
+installato grafana-server
+
+attivati tutti e tre in maniera tale che all'avvio del server si avviino anche loro con i comandi
+sudo systemctl enable "servizio"
+
+NON ANDAVA BENE QUINDI SONO STATI POI RIMOSSI
+
+installato git
+installato docker
+installato docker-compose
+
+effettuato il pull della repo contenente il tig stack gia containerizzato
+
+fatto il primo accesso su grafana e cambiata la password iniziale
+tramite il link server_ip/:3000
+
+installato mqtt
+
+Installato i servizi apache, cowrie, openldap e dionaea e aperte le loro varie porte sul sistema honeypot.
+Installati tramite container docker per...(sicurezza? facilita di gestione? facilita di installazione?)
