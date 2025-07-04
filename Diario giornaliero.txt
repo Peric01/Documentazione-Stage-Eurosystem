@@ -60,3 +60,6 @@ Studiato logger di docker e logger regex
 Seguito come viene fatto in genere un VA, vulnerability assessment
 Aggiunto menu di gestione del logger visto che non sempre serve il livello di debugging
 Iniziato la modifica del parser visto che le informazioni dei logs devono essere, ristrutturate in campi e inviate poi con mqtt
+
+12)
+Terminato il parser di cowrie e effettuato controlli sui dati in arrivo dal publish di mqtt fino a influxdb
