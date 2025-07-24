@@ -63,3 +63,9 @@ Iniziato la modifica del parser visto che le informazioni dei logs devono essere
 
 12)
 Terminato il parser di cowrie e effettuato controlli sui dati in arrivo dal publish di mqtt fino a influxdb
+
+13)
+Completato il parser di apache in regex per estrarre le info dai docker logs
+
+14)
+In sviluppo il parser di dionaea in regex per estrarre le info dal file di logs

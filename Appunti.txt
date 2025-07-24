@@ -127,29 +127,8 @@ installato mqtt
 Installato i servizi apache, cowrie, openldap e dionaea e aperte le loro varie porte sul sistema honeypot.
 Installati tramite container docker per...(sicurezza? facilita di gestione? facilita di installazione?)
 
-services:
-  openldap:
-    image: osixia/openldap:1.5.0
-    container_name: openldap
-    restart: always
-    ports:
-      - "389:389"
-      - "636:636"
-    environment:
-      - LDAP_ORGANISATION=ExampleOrg
-      - LDAP_DOMAIN=example.org
-      - LDAP_ADMIN_PASSWORD=adminpassword
-      # Forza slapd ad ascoltare su tutte le interfacce
-      - LDAP_LISTEN_ADDRESS=0.0.0.0
-      # Opzionale: abilita il logging verbose (per debug)
-      - LDAP_LOG_LEVEL=256
-    command: ["--copy-service", "--loglevel", "256", "-h", "ldap://0.0.0.0:389 ldaps://0.0.0.0:636 ldapi:///"]
-    volumes:
-      - ./ldap/data:/var/lib/ldap
-      - ./ldap/config:/etc/ldap/slapd.d
-      - ./logs/openldap:/var/log
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-        max-file: "5"
+Strumenti installati per fare attacchi fittizzi
+wsl --install
+
+hydra
+ldap-utils
